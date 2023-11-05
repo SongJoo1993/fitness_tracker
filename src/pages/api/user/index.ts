@@ -19,6 +19,6 @@ export default async function handler(
 ) {
   if (req.method === "GET") {
     const data = await getAllUsers();
-    res.json({ tags: data });
+    res.json({ users: data });
   } 
 }
